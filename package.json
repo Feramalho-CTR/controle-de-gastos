@@ -1,0 +1,31 @@
+{
+  "name": "controle-de-gastos",
+  "version": "1.0.0",
+  "description": "Um pequeno sistema de controle de gastos",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usuario/controle-de-gastos.git"
+  },
+  "keywords": [
+    "controle",
+    "de",
+    "gastos",
+    "financas"
+  ],
+  "author": "Felipe Ramalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usuario/controle-de-gastos/issues"
+  },
+  "homepage": "https://github.com/usuario/controle-de-gastos#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.3",
+    "body-parser": "^1.20.0"
+  }
+}

@@ -1,0 +1,9 @@
+<h1>Usuários Cadastrados</h1>
+
+<ul>
+  <% usuarios.forEach(usuario => { %>
+    <li>
+      <%= usuario.nome %> - <%= usuario.email %>
+    </li>
+  <% }); %>
+</ul>

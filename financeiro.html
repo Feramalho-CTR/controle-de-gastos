@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Movimentação Financeira</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center" style="height: 100vh;">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <h2 class="text-center">Registrar Movimentação Financeira</h2>
+        <form id="form-movimentacao">
+          <div class="form-group">
+            <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+            <label for="descricao">Descrição</label>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" id="valor" placeholder="Valor">
+            <label for="valor">Valor</label>
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="tipo">
+              <option value="">Selecione o tipo</option>
+              <option value="renda">Renda</option>
+              <option value="despesa">Despesa</option>
+              <option value="transferencia">Transferência</option>
+            </select>
+            <label for="tipo">Tipo</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </form>
+        <div id="extrato">
+          <h2>Extrato</h2>
+          <ul id="lista-movimentacoes">
+            <!-- Aqui será exibido o extrato -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

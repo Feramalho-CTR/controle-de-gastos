@@ -1,0 +1,19 @@
+.form-floating label {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+  opacity: 1;
+}
+.form-floating label {
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+.form-floating input:focus + label,
+.form-floating input:not(:placeholder-shown) + label {
+  top: 10;
+  transform: translateY(0);
+}
